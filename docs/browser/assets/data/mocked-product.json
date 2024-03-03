@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Melody",
+    "price": 499.99,
+    "height": "50cm",
+    "width": "80cm",
+    "color": ["wood", "black"],
+    "available": true,
+    "quantity": 1
+  }
+]
