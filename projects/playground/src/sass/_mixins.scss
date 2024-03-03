@@ -1,0 +1,26 @@
+@mixin button {
+  min-height: 3rem;
+  width: 10rem;
+  font-family: $main;
+  color: $primary;
+  background-color: $secondary;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-position: center;
+  transition: background 0.8s;
+  &:hover {
+    background-color: $tertiary;
+    background-image: radial-gradient(circle, transparent 1%, $tertiaryAlt 50%);
+    background-position: center;
+    background-size: 300%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  &:active {
+    transition: background 0s;
+    background-color: $tertiaryAltClick;
+    background-size: 100%;
+  }
+}

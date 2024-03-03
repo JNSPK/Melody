@@ -1,1 +1,12 @@
-<p>cart works!</p>
+<section class="cart">
+  <div *ngIf="service.count() === 0; else cartContent">
+    <p>Your cart is empty.</p>
+  </div>
+  <ng-template #cartContent>
+    <pre>{{ cart | json }}</pre>
+    <pre>Total Price: {{ getTotalPrice() | number : "1.2-2" }} €</pre>
+    <button (click)="removeItem()" class="rmv-item">Remove article</button>
+    <button (click)="addItem()" class="add-item">Add article</button>
+    <button (click)="purchase()" class="purchase">Purchase</button>
+  </ng-template>
+</section>

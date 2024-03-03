@@ -1,0 +1,22 @@
+@import "../../sass/variables";
+
+.product-infos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.product-infos-title {
+  font-size: 8rem;
+  text-transform: lowercase;
+  font-family: inherit;
+  opacity: 0.5;
+  font-family: $second;
+}
+p {
+  font-family: "Author-Regular";
+  width: 80%;
+  white-space: pre-line;
+  line-height: 1.5rem;
+  text-align: center;
+}

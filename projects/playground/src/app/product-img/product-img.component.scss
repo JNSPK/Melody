@@ -1,0 +1,20 @@
+.product-title {
+  font-size: 15rem;
+  text-transform: lowercase;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.product-img-container {
+  min-height: 50%;
+  width: 100%;
+
+  .product-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

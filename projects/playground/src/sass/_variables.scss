@@ -1,11 +1,17 @@
 @import url("../sass/author.scss");
+@import url("../sass/britney.scss");
 
 // fonts
-
 $main: "Author-Bold";
+$mainLight: "Author-Regular";
+$second: "Britney-Bold";
 
 // colors
 
 $primary: #fffaf0;
 $secondary: #1c1c1c;
 $tertiary: #007ea7;
+
+// alter colors
+$tertiaryAlt: #3a8da9;
+$tertiaryAltClick: #6b95a3;

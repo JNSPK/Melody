@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  height: 100%;
+}
+.product-images,
+.product-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-images {
+  background-color: white;
+  width: 40%;
+}
+.product-infos {
+  box-shadow: -15px 0px 15px -8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+product {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
