@@ -12,7 +12,7 @@ export class ProductsService {
   getById(id: number) {
     return toSignal(
       this.http
-        .get<Product[]>('../assets/data/mocked-product.json')
+        .get<Product[]>('./assets/data/mocked-product.json')
         .pipe(map((products) => products.find((product) => product.id === id)))
     );
   }
