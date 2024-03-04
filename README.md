@@ -1,27 +1,23 @@
 # Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.1.
+Mon tout premier projet Angular
 
-## Development server
+## Partie front-end d'un site e-commerce
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Monoproduit, cette page met en avant la commercialisation d'une enceinte bluetooth vintage
 
-## Code scaffolding
+## Techno
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Angular : 
 
-## Build
+- HttpClient,
+- Signals,
+- Standalone components
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Temps passé 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Newbie d'Angular, j'ai mis 25h à réaliser ce projet from scratch sans librairies.
 
-## Running end-to-end tests
+Enjoy !
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
