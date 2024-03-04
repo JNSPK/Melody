@@ -1,1 +1,21 @@
-<p>carousel works!</p>
+<div class="slides">
+  <div
+    class="slide"
+    [ngStyle]="{
+      'background-image': 'url(' + slides[currentSlide].url + ')',
+      opacity: hidden ? 0 : 1
+    }"
+  >
+    <div id="indicators">
+      @for(slide of slides; track $index){
+      <div
+        (click)="jumpToSlide($index)"
+        class="indicator"
+        [ngClass]="{ active: $index === currentSlide }"
+      ></div>
+      }
+    </div>
+    <button class="prev-btn" (click)="previous()"><</button>
+    <button class="next-btn" (click)="next()">></button>
+  </div>
+</div>

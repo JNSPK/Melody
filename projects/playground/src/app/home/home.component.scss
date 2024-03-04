@@ -1,6 +1,10 @@
 .home-container {
   display: flex;
   height: 100%;
+  @media (max-width: 700px) {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
 }
 .product-images,
 .product-infos {
@@ -12,10 +16,17 @@
 .product-images {
   background-color: white;
   width: 40%;
+  @media (max-width: 700px) {
+    width: 100%;
+    min-height: 80%;
+  }
 }
 .product-infos {
   box-shadow: -15px 0px 15px -8px rgba(0, 0, 0, 0.1);
   width: 60%;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 product {

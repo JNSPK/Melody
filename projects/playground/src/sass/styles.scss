@@ -13,6 +13,10 @@ app-root {
   height: 100vh;
   width: 100vw;
   font-family: $main;
+
+  @media (max-width: 700px) {
+    min-height: 100%;
+  }
 }
 app-header {
   display: flex;
@@ -21,9 +25,15 @@ app-header {
   top: 0;
   z-index: 1;
   width: 100%;
+  @media (max-width: 700px) {
+    position: relative;
+  }
 }
 app-cart {
   width: 100%;
+  @media (max-width: 700px) {
+    padding: 2rem 0;
+  }
 }
 app-home {
   height: 100%;

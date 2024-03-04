@@ -11,10 +11,7 @@
 .product-img-container {
   min-height: 50%;
   width: 100%;
-
-  .product-img {
+  @media (max-width: 700px) {
     height: 100%;
-    width: 100%;
-    object-fit: cover;
   }
 }
