@@ -3,10 +3,27 @@
     <p>Your cart is empty.</p>
   </div>
   <ng-template #cartContent>
-    <pre>{{ cart | json }}</pre>
-    <pre>Total Price: {{ getTotalPrice() | number : "1.2-2" }} €</pre>
-    <button (click)="removeItem()" class="rmv-item">Remove article</button>
-    <button (click)="addItem()" class="add-item">Add article</button>
+    <article class="cart-card">
+      <div class="cart-card-img-container">
+        <img
+          [src]="getSelectedProductInfos()[0].product.img"
+          alt="Speaker's photo"
+        />
+      </div>
+      <section class="cart-card-infos">
+        <p>{{ getSelectedProductInfos()[0].product.name }}</p>
+        <p>{{ getSelectedProductInfos()[0].product.price }}</p>
+        <p>{{ getSelectedProductInfos()[0].quantity }}</p>
+        <section class="cart-card-total">
+          Total Price: {{ getTotalPrice() | number : "1.2-2" }} €
+        </section>
+      </section>
+
+      <section class="cart-card-btn-container">
+        <button (click)="removeItem()" class="rmv-item">Remove article</button>
+        <button (click)="addItem()" class="add-item">Add article</button>
+      </section>
+    </article>
     <button (click)="purchase()" class="purchase">Purchase</button>
   </ng-template>
 </section>
