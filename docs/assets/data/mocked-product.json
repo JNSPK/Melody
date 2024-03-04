@@ -7,6 +7,7 @@
     "width": "80cm",
     "color": ["wood", "black"],
     "available": true,
-    "quantity": 1
+    "quantity": 1,
+    "img": "./assets/img/face2.jpg"
   }
 ]
