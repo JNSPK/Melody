@@ -40,9 +40,7 @@ export class CartService {
     }
     return;
   }
-  infos = computed(() => {
-    return this.cart().map((infos) => infos);
-  });
+
   count = computed(() => {
     return this.cart().reduce((acc, cart) => acc + cart.quantity, 0);
   });
@@ -55,5 +53,9 @@ export class CartService {
   }
   getInfos() {
     return this.cart().map((infos) => infos);
+  }
+
+  clearCart() {
+    this.cart.update(() => []);
   }
 }

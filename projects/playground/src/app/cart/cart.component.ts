@@ -18,17 +18,11 @@ export class CartComponent {
   productService = inject(ProductsService);
   melody = this.productService.getById(1);
   cart = this.service.cart();
-  infos = this.service.infos;
 
-  getProductInfos() {
-    console.log(this.infos);
-    return this.infos;
-  }
   getTotalPrice(): number {
     return this.service.totalPrice();
   }
   getSelectedProductInfos() {
-    console.log(this.service.getInfos());
     return this.service.getInfos();
   }
   removeItem() {
@@ -38,7 +32,6 @@ export class CartComponent {
     } else if (this.service.count() >= 1) this.service.removeProduct(melody);
   }
   addItem() {
-    console.log(this.service.cart());
     const melody = this.melody();
     if (!melody) {
       return console.error('error');
@@ -46,6 +39,7 @@ export class CartComponent {
     this.service.addProduct(melody);
   }
   purchase() {
-    alert(`Item purchased !\nThank you`);
+    this.service.clearCart();
+    alert(`Item purchased !\nThank you !`);
   }
 }
